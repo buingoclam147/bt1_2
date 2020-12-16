@@ -76,12 +76,12 @@
             var hien1 = document.getElementById('hien1');
             console.log(hien1);
             hien1.classList.add('hien');
-            hien1.innerHTML = "Với miếng đất " + cDai.value + " X " + cRong.value + " thì diện tích tường cần xây là : " + c;
+            hien1.innerHTML = "Với miếng đất " + cDai.value + " X " + cRong.value + " thì diện tích tường cần xây là : " + 2 * (+cCao.value) * ((+cDai.value) + (+cRong.value));
             console.log(cCao.value);
             var hien2 = document.getElementById('hien2');
             console.log(hien2);
             hien2.classList.add('hien');
-            hien2.innerHTML = "Chi phí để xây miếng đất của bạn:" + d + "Đ";
+            hien2.innerHTML = "Chi phí để xây miếng đất của bạn:" + (   2 * (+cCao.value) * ((+cDai.value) + (+cRong.value))*530000) + "Đ";
             console.log(cDai.value, ' ', cRong.value, ' ', cCao.value, ' ', c, ' ', d);
         };
     </script>
