@@ -1,0 +1,25 @@
+.row h1{
+    border: 2px solid aquamarine;
+    margin: 4% 8%;
+    padding: 20px 15px;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+.content1{
+    border: 2px solid aquamarine;
+    line-height: 2;
+}
+.chung input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.chung label{
+    font-weight: bold;
+}
+.alert{display: none;}
+.hien{
+    display: block;
+}

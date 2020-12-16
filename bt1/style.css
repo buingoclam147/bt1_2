@@ -1,0 +1,13 @@
+.mhjs{
+    border: 2px solid pink;
+    text-align: center;
+    font-size: 3rem;
+    margin: 15px 25px;
+}
+.an{
+    display: none;
+       margin-top: 20px; 
+}
+.noi{
+    display: block;
+}

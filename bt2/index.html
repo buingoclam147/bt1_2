@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="container">
+    <div class="row">
+        <h1 class=" col-md-10">
+            Chương trình tính chi phí xây dựng
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4 content1">
+            <p>Bạn có một miếng đất và bạn mong muốn xây tường bao quanh miếng dất này.
+                tuy nhiên bạn không biết phải tốn bao nhiêu chi phí cho xây dựng tường bao quanh khu đất của mình là bao
+                nhiêu <br> <br>
+                Đừng lo lắng!. Chương trình của chúng tôi giúp bạn thực hiện công việc đó một cách nhanh chóng và đơn
+                giản. <br>
+                Hãy nhập thông số cần thiết vào FORM bên cạnh rồi hãy nhấn nút 'tính chi phí', trang web của chúng tôi
+                sẽ thực hiện bài
+                toán giúp bạn.
+                <br> <br> CHi phí xây dựng tại thời điểm hiện tại có giá <b style="color: red;">530.000 đ</b> trên 1 met
+                vuông
+            </p>
+        </div>
+        <div class="col-md-8">
+            <form class="w3-container">
+                <div class="chung">
+                    <label>Chiều dài miếng đất </label>
+                    <br>
+                    <input type="number" id="dai">
+                </div>
+                <div class="chung">
+                    <label>Chiều rộng miếng đất </label>
+                    <br>
+                    <input type="number" id="rong">
+                </div>
+                <div class="chung">
+                    <label>Chiều cao tường </label>
+                    <br>
+                    <input type="number" id="cao">
+                </div>
+            </form>
+            <div class="btn btn-success mt-3" onclick="thongbao()"> Tính chi phí</div>
+
+            <div class="alert alert-success mt-3" role="alert" id="hien1">
+            </div>
+            <div class="alert alert-success mt-3" role="alert" id="hien2">
+            </div>
+        </div>
+    </div>
+    <script>
+        var cDai = document.getElementById('dai');
+        var cRong = document.getElementById('rong');
+        var cCao = document.getElementById('cao');
+        var c = 2 * (+cCao.value) * ((+cDai.value) + (+cRong.value));
+
+        var d = c * 530000;
+        function thongbao() {
+            var hien1 = document.getElementById('hien1');
+            console.log(hien1);
+            hien1.classList.add('hien');
+            hien1.innerHTML = "Với miếng đất " + cDai.value + " X " + cRong.value + " thì diện tích tường cần xây là : " + c;
+            console.log(cCao.value);
+            var hien2 = document.getElementById('hien2');
+            console.log(hien2);
+            hien2.classList.add('hien');
+            hien2.innerHTML = "Chi phí để xây miếng đất của bạn:" + d + "Đ";
+            console.log(cDai.value, ' ', cRong.value, ' ', cCao.value, ' ', c, ' ', d);
+        };
+    </script>
+</body>
+
+</html>

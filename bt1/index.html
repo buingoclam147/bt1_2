@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="mhjs">Minh họa JavaScript</div>
+        <div class="btn btn-primary" onclick="a()" >
+            Nạp Tin Mới
+        </div>
+        <div class="an" id="an">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>bla bla</h2>
+                    <p>Image at the top (card-img-top):</p>
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="./imgs/hinh-anh-dep-1.jpg" alt="imganh" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text some example text. John Doe is an architect and
+                                engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2>bla bla</h2>
+                    <p>Image at the top (card-img-top):</p>
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="./imgs/hinh-anh-dep-1.jpg" alt="imganh" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text some example text. John Doe is an architect and
+                                engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2>bla bla</h2>
+                    <p>Image at the top (card-img-top):</p>
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="./imgs/hinh-anh-dep-1.jpg" alt="imganh" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text some example text. John Doe is an architect and
+                                engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2>bla bla</h2>
+                    <p>Image at the top (card-img-top):</p>
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="./imgs/hinh-anh-dep-1.jpg" alt="imganh" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text some example text. John Doe is an architect and
+                                engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2>bla bla</h2>
+                    <p>Image at the top (card-img-top):</p>
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="./imgs/hinh-anh-dep-1.jpg" alt="imganh" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text some example text. John Doe is an architect and
+                                engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2>bla bla</h2>
+                    <p>Image at the top (card-img-top):</p>
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="./imgs/hinh-anh-dep-1.jpg" alt="imganh" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text some example text. John Doe is an architect and
+                                engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var isShow = false;
+    function a() {
+    var an = document.getElementById("an");
+    console.log(an);
+    if (isShow==false){
+        an.classList.add("noi");
+        isShow=true;
+    }
+    else{
+        an.classList.remove("noi");
+        isShow=false;
+    }
+    }
+</script>
+
+</html>
